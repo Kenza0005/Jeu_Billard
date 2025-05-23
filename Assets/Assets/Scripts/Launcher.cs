@@ -5,7 +5,8 @@ public class Launcher : MonoBehaviour
 {
     // public GameObject ballPrefab;
     // public Transform pointLancement;
-    public float force = 500f;
+
+    const float force = 7f;
     // public List<GameObject> ballList= new List<GameObject>(); 
     Rigidbody body;
     private void Awake()
@@ -26,8 +27,9 @@ public class Launcher : MonoBehaviour
 
             //     rb.AddForce(0,force,0);
             // }
+            Vector3 vect = new Vector3(force, 0, 0);
             body.isKinematic = false;
-            body.AddForce(Vector3.right * force, ForceMode.Impulse);
+            body.AddForce(vect, ForceMode.Impulse);
             // body.AddForce(force, 0, 0);
         }
     }
