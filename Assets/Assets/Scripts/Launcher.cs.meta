@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 7ca4f5a5afa6d30478fe26817d4b9759
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - ballPrefab: {instanceID: 0}
+  - pointLancement: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
