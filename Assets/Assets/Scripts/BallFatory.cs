@@ -28,7 +28,7 @@ public class BallFatory : MonoBehaviour
     void Start()
     {
         // Au début du jeu, on affiche qu’il reste 10 balles
-        ballText.text = $"Balles restantes : 10";
+        ballText.text = $"B.Restantes : 10";
 
         // On remet les essais à 2 à chaque nouvelle balle
         remainingTries = MAX_LAUNCHES;
@@ -57,7 +57,7 @@ public class BallFatory : MonoBehaviour
 
                 // 5) On retire 1 balle au compteur, et on met à jour le texte à l’écran
                 remaining--;
-                ballText.text = $"Balles restantes : {remaining}";
+                ballText.text = $"B.Restantes : {remaining}";
             }
             else
             {

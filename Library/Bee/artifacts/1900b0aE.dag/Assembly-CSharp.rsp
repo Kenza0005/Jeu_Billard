@@ -358,6 +358,7 @@
 "Assets/Assets/Scripts/BallFatory.cs"
 "Assets/Assets/Scripts/GameManager.cs"
 "Assets/Assets/Scripts/Launcher.cs"
+"Assets/Assets/Scripts/QuitGame.cs"
 "Assets/Assets/Scripts/RestartButton.cs"
 "Assets/Assets/Scripts/Trou.cs"
 -langversion:9.0
