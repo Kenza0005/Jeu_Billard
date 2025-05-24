@@ -2,21 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class RestartButton : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Cette fonction est appelée quand on clique sur le bouton "Recommencer"
     public void OnRestartPressed()
     {
-        // Recharge la scène courante
+        // On recharge la scène actuelle (ça remet tout à zéro)
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
