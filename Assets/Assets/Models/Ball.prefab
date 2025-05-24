@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1417634172242665851}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +105,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.2
+  m_Radius: 0.4
   m_Center: {x: 0, y: -0.012293453, z: 0.013299362}
 --- !u!54 &-7997414620973105051
 Rigidbody:

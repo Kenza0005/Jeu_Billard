@@ -13,7 +13,17 @@ public class Trou : MonoBehaviour
     {
         src = GetComponent<AudioSource>();
     }
-
+    // Appelé quand un Collider entre dans le trigger du trou
+    private void OnTriggerEnter(Collider other)
+    {
+        // Vérifie que c'est bien la balle et que ce GameObject est un trou
+        if (other.CompareTag("Ball") && CompareTag("Hole"))
+        {
+            PlaySound();
+            GameManager.Instance.AjouterScore(points);
+            Destroy(other.gameObject);
+        }
+    }
     public void PlaySound()
     {
         if (!src.isPlaying)
