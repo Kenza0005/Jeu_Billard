@@ -41,5 +41,11 @@ public class Trou : MonoBehaviour
     {
         if (!src.isPlaying)
             src.Play();
+        StartCoroutine(StopSoundAfterDelay(1f));
+    }
+    private IEnumerator StopSoundAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        src.Stop();
     }
 }
